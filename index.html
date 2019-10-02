@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <title>SmartNinja's JavaScript homework - Calculator</title>
+</head>
+
+<body>
+    <div class="container h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="card text-center">
+                    <div class="card-header bg-dark">
+                        <input type="text" class="form-control form-control-lg" id="calculatorInput" placeholder="0" value="" autocomplete="off" disabled>
+                    </div>
+                    <div class="card-body">
+                        <div class="calculatorButtons">
+                            <div class="row">
+                                <div class="col-3">
+                                    <button class="btn btn-success btn-lg btn-block operator" type="button" value="+">+</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-danger btn-lg btn-block operator" type="button" value="-">-</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-warning btn-lg text-white btn-block operator" type="button" value="*">×</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-info btn-lg btn-block operator" type="button" value="/">÷</button>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-3">
+                                    <button class="btn btn-light btn-lg btn-block border-gray" type="button" value="7">7</button>
+                                    <button class="btn btn-light btn-lg btn-block border-gray" type="button" value="4">4</button>
+                                    <button class="btn btn-light btn-lg btn-block border-gray" type="button" value="1">1</button>
+                                    <button class="btn btn-light btn-lg btn-block border-gray" type="button" value="0">0</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-light btn-lg btn-block border-gray" type="button" value="8">8</button>
+                                    <button class="btn btn-light btn-lg btn-block border-gray" type="button" value="5">5</button>
+                                    <button class="btn btn-light btn-lg btn-block border-gray" type="button" value="2">2</button>
+                                    <button class="btn btn-light btn-lg btn-block border-gray decimal" type="button"value=".">.</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-light btn-lg btn-block border-gray" type="button" value="9">9</button>
+                                    <button class="btn btn-light btn-lg btn-block border-gray" type="button" value="6">6</button>
+                                    <button class="btn btn-light btn-lg btn-block border-gray" type="button" value="3">3</button>
+                                    <button class="btn btn-danger btn-lg btn-block btn-smaller-text clear" type="button" value="clear">AC</button>
+                                </div>
+                                <div class="col-3 card-group">
+                                    <button id="enterKey" class="btn btn-primary btn-lg btn-block equal-sign operator" type="button" value="=">=</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
